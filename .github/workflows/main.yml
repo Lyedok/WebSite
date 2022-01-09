@@ -20,3 +20,13 @@ jobs:
         
       - name: List folder
         run: ls -la
+        
+      - name: Update website
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: ./html/*
+          host: ${{ secrets.SSH_HOST }}
+          remote: ${{ secrets.SSH_DIR }}
+          port: ${{ secrets.SSH_PORT }}
+          user: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
