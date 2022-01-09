@@ -5,4 +5,5 @@ if [`git status | grep "nothing to commit"` != ""]; then
 	git push origin
 else echo "Nothing to commit"
 fi
-read -p "Press enter to continue"
+echo
+read -p "Press enter to continue..."
