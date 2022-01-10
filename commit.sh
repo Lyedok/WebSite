@@ -7,7 +7,7 @@ if [ "$status" == "" ]; then
 	git add *
 	git commit -m "$m"
 	git push origin
-else echo "Nothing to commit"
+else echo "$status"
 fi
 echo
 read -p "Press enter to continue..."
