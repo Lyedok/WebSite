@@ -1,3 +1,4 @@
+#!/bin/bash
 if [`git status | grep "nothing to commit"` != ""]; then
 	read -p "Please, enter a commit description:" m
 	git add *
